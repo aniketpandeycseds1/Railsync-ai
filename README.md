@@ -1,4 +1,4 @@
-# RailSync AI – Intelligent Railway Block Planning System
+﻿# RailAvail – Intelligent Railway Block Planning System
 ## Smart India Hackathon 2026 | Problem Statement 26027
 
 > AI-powered automatic block planning to maximize asset availability for train operations on Indian Railways
@@ -28,11 +28,11 @@ npm start
 
 | Role | Email | Password |
 |------|-------|----------|
-| **Administrator** | admin@railsync.in | admin123 |
-| **Engineering** | engineering@railsync.in | eng123 |
-| **Traction Distribution** | traction@railsync.in | trac123 |
-| **Signal & Telecom** | signaling@railsync.in | signal123 |
-| **Operations Controller** | operations@railsync.in | ops123 |
+| **Administrator** | admin@RailAvail.in | admin123 |
+| **Engineering** | engineering@RailAvail.in | eng123 |
+| **Traction Distribution** | traction@RailAvail.in | trac123 |
+| **Signal & Telecom** | signaling@RailAvail.in | signal123 |
+| **Operations Controller** | operations@RailAvail.in | ops123 |
 
 ---
 
@@ -47,7 +47,7 @@ Three departments request maintenance on the same Kalyan–Pune section:
 | Traction Distribution | OHE Maintenance (Km 44–51) | 3.5h |
 
 **Traditional Planning:** 3 separate blocks = 10.5h disruption  
-**RailSync AI:** 1 combined optimized block = 4h disruption  
+**RailAvail:** 1 combined optimized block = 4h disruption  
 **Result: 62% disruption reduction + 17.4% asset availability improvement**
 
 ---
@@ -55,7 +55,7 @@ Three departments request maintenance on the same Kalyan–Pune section:
 ## 📁 Project Structure
 
 ```
-railsync-ai/
+RailAvail-ai/
 ├── client/                   # React + TypeScript Frontend (Vite)
 │   └── src/
 │       ├── components/       # Reusable UI components

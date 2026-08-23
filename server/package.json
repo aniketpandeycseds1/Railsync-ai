@@ -1,7 +1,7 @@
-{
-  "name": "railsync-ai-server",
+﻿{
+  "name": "RailAvail-ai-server",
   "version": "1.0.0",
-  "description": "RailSync AI Backend – SIH 2026 PS-26027",
+  "description": "RailAvail Backend – SIH 2026 PS-26027",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

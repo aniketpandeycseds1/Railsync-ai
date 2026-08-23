@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Bell, Search, Wifi } from 'lucide-react';
 import { useStore } from '../../store/useStore';
@@ -13,14 +13,14 @@ const PAGE_TITLES: Record<string, { title: string; subtitle: string }> = {
   '/blocks': { title: 'Generated Block Plans', subtitle: 'Optimized maintenance block schedule' },
   '/conflicts': { title: 'Conflict Management', subtitle: 'Detected conflicts and AI resolutions' },
   '/analytics': { title: 'Analytics & Reports', subtitle: 'Performance metrics and before/after comparison' },
-  '/assistant': { title: 'RailSync AI Assistant', subtitle: 'AI-powered intelligent query assistant' },
+  '/assistant': { title: 'RailAvail Assistant', subtitle: 'AI-powered intelligent query assistant' },
   '/settings': { title: 'Settings & Administration', subtitle: 'System configuration and user management' },
 };
 
 export function Topbar() {
   const location = useLocation();
   const { conflicts } = useStore();
-  const pageInfo = PAGE_TITLES[location.pathname] || { title: 'RailSync AI', subtitle: '' };
+  const pageInfo = PAGE_TITLES[location.pathname] || { title: 'RailAvail', subtitle: '' };
   const openConflicts = conflicts.filter((c) => c.status === 'open').length;
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
   RadialBarChart, RadialBar, PieChart, Pie, Legend,
@@ -106,7 +106,7 @@ export function AnalyticsPage() {
           {/* After */}
           <div style={{ background: 'rgba(16,185,129,0.08)', border: '1px solid rgba(16,185,129,0.2)', borderRadius: 12, padding: 20 }}>
             <div style={{ fontSize: 14, fontWeight: 700, color: '#34d399', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <TrendingUp size={16} /> AI-Powered Planning (WITH RailSync AI)
+              <TrendingUp size={16} /> AI-Powered Planning (WITH RailAvail)
             </div>
             <div style={{ background: 'rgba(16,185,129,0.1)', borderRadius: 8, padding: '14px', marginBottom: 12 }}>
               <div style={{ fontSize: 13, fontWeight: 700, color: '#34d399', marginBottom: 4 }}>✓ 1 Combined Optimized Block</div>

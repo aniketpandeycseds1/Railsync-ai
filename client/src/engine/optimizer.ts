@@ -1,5 +1,5 @@
-// ============================================================
-// RailSync AI – Block Planning Optimization Engine
+﻿// ============================================================
+// RailAvail – Block Planning Optimization Engine
 // Rule-based scoring algorithm (designed for ML replacement)
 //
 // Architecture:

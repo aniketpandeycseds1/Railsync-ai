@@ -1,5 +1,5 @@
-// ============================================================
-// RailSync AI – Express Backend Server
+﻿// ============================================================
+// RailAvail – Express Backend Server
 // SIH 2026 | Problem Statement 26027
 // ============================================================
 
@@ -21,19 +21,19 @@ let requests = [];
 let blocks = [];
 let conflicts = [];
 let users = [
-  { id: 'u1', name: 'Rajesh Kumar', email: 'admin@railsync.in', role: 'administrator', department: 'Operations', division: 'Mumbai' },
-  { id: 'u2', name: 'Priya Sharma', email: 'engineering@railsync.in', role: 'engineering', department: 'Engineering', division: 'Mumbai' },
-  { id: 'u3', name: 'Arjun Nair', email: 'traction@railsync.in', role: 'traction', department: 'Traction Distribution', division: 'Mumbai' },
-  { id: 'u4', name: 'Deepa Menon', email: 'signaling@railsync.in', role: 'signaling', department: 'Signal & Telecommunication', division: 'Mumbai' },
-  { id: 'u5', name: 'Vikram Singh', email: 'operations@railsync.in', role: 'operations', department: 'Operations', division: 'Mumbai' },
+  { id: 'u1', name: 'Rajesh Kumar', email: 'admin@RailAvail.in', role: 'administrator', department: 'Operations', division: 'Mumbai' },
+  { id: 'u2', name: 'Priya Sharma', email: 'engineering@RailAvail.in', role: 'engineering', department: 'Engineering', division: 'Mumbai' },
+  { id: 'u3', name: 'Arjun Nair', email: 'traction@RailAvail.in', role: 'traction', department: 'Traction Distribution', division: 'Mumbai' },
+  { id: 'u4', name: 'Deepa Menon', email: 'signaling@RailAvail.in', role: 'signaling', department: 'Signal & Telecommunication', division: 'Mumbai' },
+  { id: 'u5', name: 'Vikram Singh', email: 'operations@RailAvail.in', role: 'operations', department: 'Operations', division: 'Mumbai' },
 ];
 
 const PASSWORDS = {
-  'admin@railsync.in': 'admin123',
-  'engineering@railsync.in': 'eng123',
-  'traction@railsync.in': 'trac123',
-  'signaling@railsync.in': 'signal123',
-  'operations@railsync.in': 'ops123',
+  'admin@RailAvail.in': 'admin123',
+  'engineering@RailAvail.in': 'eng123',
+  'traction@RailAvail.in': 'trac123',
+  'signaling@RailAvail.in': 'signal123',
+  'operations@RailAvail.in': 'ops123',
 };
 
 // ─────────────────────────────────────────
@@ -151,11 +151,11 @@ app.get('/api/analytics/kpis', (req, res) => {
 // HEALTH CHECK
 // ─────────────────────────────────────────
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', service: 'RailSync AI Server', version: '1.0.0', timestamp: new Date().toISOString() });
+  res.json({ status: 'ok', service: 'RailAvail Server', version: '1.0.0', timestamp: new Date().toISOString() });
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🚂 RailSync AI Server running on http://localhost:${PORT}`);
+  console.log(`\n🚂 RailAvail Server running on http://localhost:${PORT}`);
   console.log(`📡 API Base: http://localhost:${PORT}/api`);
   console.log(`✅ Health: http://localhost:${PORT}/api/health\n`);
 });

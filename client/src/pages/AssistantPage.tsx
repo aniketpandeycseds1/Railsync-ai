@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+﻿import React, { useState, useRef, useEffect } from 'react';
 import { Send, Train, Sparkles, RotateCcw } from 'lucide-react';
 import { useStore } from '../store/useStore';
 import { ASSISTANT_RESPONSES } from '../data/mockData';
@@ -49,7 +49,7 @@ function getAssistantResponse(query: string): string {
   }
   return `I understand you're asking about **"${query}"**. 
 
-As the RailSync AI Assistant, I can help you with:
+As the RailAvail Assistant, I can help you with:
 - 🔹 Optimal maintenance time windows
 - 🔹 Identifying combinable requests  
 - 🔹 Conflict analysis and resolution
@@ -95,7 +95,7 @@ export function AssistantPage() {
             <div style={{ width: 32, height: 32, borderRadius: 8, background: 'linear-gradient(135deg, #ff6b00, #2557a7)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Sparkles size={16} color="white" />
             </div>
-            RailSync AI Assistant
+            RailAvail Assistant
           </h1>
           <p className="page-subtitle">Context-aware intelligent assistant for railway operations queries</p>
         </div>
@@ -113,7 +113,7 @@ export function AssistantPage() {
               <Train size={18} color="white" />
             </div>
             <div>
-              <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--color-text-primary)' }}>RailSync Assistant</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--color-text-primary)' }}>RailAvail Assistant</div>
               <div style={{ fontSize: 11, color: '#10b981', display: 'flex', alignItems: 'center', gap: 4 }}>
                 <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#10b981', boxShadow: '0 0 4px #10b981' }} />
                 Online · Context-aware AI
@@ -135,7 +135,7 @@ export function AssistantPage() {
                   Hello, {user?.name?.split(' ')[0]}! 👋
                 </div>
                 <div style={{ fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.7 }}>
-                  I'm RailSync Assistant, your AI-powered railway operations advisor.<br />
+                  I'm RailAvail Assistant, your AI-powered railway operations advisor.<br />
                   Ask me anything about maintenance planning, conflicts, or schedules.
                 </div>
               </div>
@@ -200,7 +200,7 @@ export function AssistantPage() {
           </div>
 
           <div className="card">
-            <div className="card-title" style={{ marginBottom: 10, fontSize: 12 }}>About RailSync Assistant</div>
+            <div className="card-title" style={{ marginBottom: 10, fontSize: 12 }}>About RailAvail Assistant</div>
             <div style={{ fontSize: 12, color: 'var(--color-text-muted)', lineHeight: 1.7 }}>
               <div style={{ marginBottom: 6 }}>🤖 <strong style={{ color: 'var(--color-text-secondary)' }}>Current mode:</strong> Pattern-matching AI with railway domain knowledge</div>
               <div style={{ marginBottom: 6 }}>🔌 <strong style={{ color: 'var(--color-text-secondary)' }}>Future:</strong> Plug-in GPT-4/Gemini API for natural language responses</div>

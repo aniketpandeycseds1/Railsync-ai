@@ -1,5 +1,5 @@
-// ============================================================
-// RailSync AI – Global Zustand Store
+﻿// ============================================================
+// RailAvail – Global Zustand Store
 // ============================================================
 
 import { create } from 'zustand';
@@ -173,7 +173,7 @@ export const useStore = create<Store>()(
       clearChat: () => set({ chatMessages: [] }),
     }),
     {
-      name: 'railsync-storage',
+      name: 'RailAvail-storage',
       partialize: (state) => ({
         user: state.user,
         token: state.token,

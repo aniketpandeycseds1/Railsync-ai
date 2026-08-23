@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Train, Lock, Mail, Eye, EyeOff, ChevronRight, Shield } from 'lucide-react';
 import { useStore } from '../store/useStore';
 
 const DEMO_ACCOUNTS = [
-  { email: 'admin@railsync.in', password: 'admin123', role: 'Administrator', color: '#ef4444' },
-  { email: 'engineering@railsync.in', password: 'eng123', role: 'Engineering', color: '#3b82f6' },
-  { email: 'traction@railsync.in', password: 'trac123', role: 'Traction Dist.', color: '#f59e0b' },
-  { email: 'signaling@railsync.in', password: 'signal123', role: 'Signal & Telecom', color: '#10b981' },
-  { email: 'operations@railsync.in', password: 'ops123', role: 'Operations', color: '#8b5cf6' },
+  { email: 'admin@RailAvail.in', password: 'admin123', role: 'Administrator', color: '#ef4444' },
+  { email: 'engineering@RailAvail.in', password: 'eng123', role: 'Engineering', color: '#3b82f6' },
+  { email: 'traction@RailAvail.in', password: 'trac123', role: 'Traction Dist.', color: '#f59e0b' },
+  { email: 'signaling@RailAvail.in', password: 'signal123', role: 'Signal & Telecom', color: '#10b981' },
+  { email: 'operations@RailAvail.in', password: 'ops123', role: 'Operations', color: '#8b5cf6' },
 ];
 
 export function LoginPage() {
-  const [email, setEmail] = useState('admin@railsync.in');
+  const [email, setEmail] = useState('admin@RailAvail.in');
   const [password, setPassword] = useState('admin123');
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState('');
@@ -56,7 +56,7 @@ export function LoginPage() {
             </div>
             <div>
               <div style={{ fontSize: 28, fontWeight: 800, color: 'white', fontFamily: 'Rajdhani, sans-serif', letterSpacing: 1 }}>
-                RailSync AI
+                RailAvail
               </div>
               <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: 2 }}>
                 Intelligent Block Planning System
@@ -103,7 +103,7 @@ export function LoginPage() {
       <div className="login-right">
         <div style={{ marginBottom: 32 }}>
           <h2 style={{ fontSize: 24, fontWeight: 700, color: 'var(--color-text-primary)', marginBottom: 6 }}>
-            Sign in to RailSync AI
+            Sign in to RailAvail
           </h2>
           <p style={{ fontSize: 13, color: 'var(--color-text-muted)' }}>
             Indian Railways Maintenance Portal
@@ -121,7 +121,7 @@ export function LoginPage() {
                 style={{ paddingLeft: 32 }}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@railsync.in"
+                placeholder="you@RailAvail.in"
                 required
               />
             </div>
@@ -157,7 +157,7 @@ export function LoginPage() {
 
           <button type="submit" className="btn btn-primary btn-lg" disabled={loading} style={{ marginTop: 4 }}>
             {loading ? <span className="spinner" /> : <Shield size={16} />}
-            {loading ? 'Authenticating...' : 'Sign In to RailSync AI'}
+            {loading ? 'Authenticating...' : 'Sign In to RailAvail'}
           </button>
         </form>
 

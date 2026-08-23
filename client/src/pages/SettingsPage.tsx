@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Settings, Users, Shield, Database, Bell, Save, CheckCircle } from 'lucide-react';
 import { useStore } from '../store/useStore';
 import { DEMO_USERS } from '../data/mockData';
@@ -183,7 +183,7 @@ export function SettingsPage() {
             <div className="card-title" style={{ marginBottom: 16 }}>System Information</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {[
-                { label: 'Application', value: 'RailSync AI – SIH 2026 Prototype' },
+                { label: 'Application', value: 'RailAvail – SIH 2026 Prototype' },
                 { label: 'Version', value: 'v1.0.0-sih2026' },
                 { label: 'Problem Statement', value: 'PS-26027' },
                 { label: 'AI Engine', value: 'Rule-based scoring (ML-replaceable)' },

@@ -1,5 +1,5 @@
-// ============================================================
-// RailSync AI – Mock Data & Demo Scenario
+﻿// ============================================================
+// RailAvail – Mock Data & Demo Scenario
 // Complete sample dataset for SIH 2026 Prototype
 // ============================================================
 
@@ -15,7 +15,7 @@ export const DEMO_USERS: User[] = [
   {
     id: 'u1',
     name: 'Rajesh Kumar',
-    email: 'admin@railsync.in',
+    email: 'admin@RailAvail.in',
     role: 'administrator',
     department: 'Operations',
     division: 'Mumbai',
@@ -24,7 +24,7 @@ export const DEMO_USERS: User[] = [
   {
     id: 'u2',
     name: 'Priya Sharma',
-    email: 'engineering@railsync.in',
+    email: 'engineering@RailAvail.in',
     role: 'engineering',
     department: 'Engineering',
     division: 'Mumbai',
@@ -33,7 +33,7 @@ export const DEMO_USERS: User[] = [
   {
     id: 'u3',
     name: 'Arjun Nair',
-    email: 'traction@railsync.in',
+    email: 'traction@RailAvail.in',
     role: 'traction',
     department: 'Traction Distribution',
     division: 'Mumbai',
@@ -42,7 +42,7 @@ export const DEMO_USERS: User[] = [
   {
     id: 'u4',
     name: 'Deepa Menon',
-    email: 'signaling@railsync.in',
+    email: 'signaling@RailAvail.in',
     role: 'signaling',
     department: 'Signal & Telecommunication',
     division: 'Mumbai',
@@ -51,7 +51,7 @@ export const DEMO_USERS: User[] = [
   {
     id: 'u5',
     name: 'Vikram Singh',
-    email: 'operations@railsync.in',
+    email: 'operations@RailAvail.in',
     role: 'operations',
     department: 'Operations',
     division: 'Mumbai',
@@ -60,11 +60,11 @@ export const DEMO_USERS: User[] = [
 ];
 
 export const LOGIN_CREDENTIALS: Record<string, string> = {
-  'admin@railsync.in': 'admin123',
-  'engineering@railsync.in': 'eng123',
-  'traction@railsync.in': 'trac123',
-  'signaling@railsync.in': 'signal123',
-  'operations@railsync.in': 'ops123',
+  'admin@RailAvail.in': 'admin123',
+  'engineering@RailAvail.in': 'eng123',
+  'traction@RailAvail.in': 'trac123',
+  'signaling@RailAvail.in': 'signal123',
+  'operations@RailAvail.in': 'ops123',
 };
 
 // ─────────────────────────────────────────
@@ -679,6 +679,6 @@ export const ASSISTANT_RESPONSES: AssistantQuery[] = [
   },
   {
     pattern: /hello|hi|help|start/i,
-    response: `Hello! I'm **RailSync Assistant** 🚂, your AI-powered railway operations advisor.\n\nI can help you with:\n\n🔹 Finding the best maintenance time windows\n🔹 Identifying which requests can be combined\n🔹 Explaining scheduling decisions\n🔹 Analyzing delay impacts\n🔹 Reviewing high-priority activities\n🔹 Checking conflict status\n🔹 Asset availability metrics\n\nJust ask me anything about the current maintenance plan!`,
+    response: `Hello! I'm **RailAvail Assistant** 🚂, your AI-powered railway operations advisor.\n\nI can help you with:\n\n🔹 Finding the best maintenance time windows\n🔹 Identifying which requests can be combined\n🔹 Explaining scheduling decisions\n🔹 Analyzing delay impacts\n🔹 Reviewing high-priority activities\n🔹 Checking conflict status\n🔹 Asset availability metrics\n\nJust ask me anything about the current maintenance plan!`,
   },
 ];

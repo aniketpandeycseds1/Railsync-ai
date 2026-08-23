@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard, ClipboardList, PlusCircle, Map, Zap,
@@ -17,7 +17,7 @@ const NAV_ITEMS = [
   { to: '/blocks', icon: CalendarCheck, label: 'Block Plans' },
   { to: '/conflicts', icon: AlertTriangle, label: 'Conflict Management' },
   { to: '/analytics', icon: BarChart3, label: 'Analytics & Reports' },
-  { to: '/assistant', icon: MessageSquareMore, label: 'RailSync Assistant' },
+  { to: '/assistant', icon: MessageSquareMore, label: 'RailAvail Assistant' },
   { to: '/settings', icon: Settings, label: 'Settings' },
 ];
 
@@ -59,7 +59,7 @@ export function Sidebar() {
             <Train size={20} color="white" />
           </div>
           <div>
-            <div className="sidebar-logo-title">RailSync AI</div>
+            <div className="sidebar-logo-title">RailAvail</div>
             <div className="sidebar-logo-sub">SIH 2026 · PS-26027</div>
           </div>
         </div>
