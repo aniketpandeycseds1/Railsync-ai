@@ -13,7 +13,7 @@ cd client
 npm install
 npm run dev
 ```
-Open: rail-avail-ai-akmm.vercel.app
+Open: *rail-avail-ai-akmm.vercel.app*
 
 ### Backend (Node.js + Express) — Optional
 ```bash
